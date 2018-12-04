@@ -24,4 +24,14 @@ app.get('/', function (req, res, next){
 })
 
 
+// SHOW ADD USER FROM
+app.get('/add', function(req, res, next){
+	//render to views/user/add.ejs
+	res.render	('user/add', {
+		title: 'Add New User',
+		name: '',
+		age: '',
+		email: ''
 
+	})
+})
